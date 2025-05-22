@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#info-container {
+    display: flex;
+    gap: 10px;
+}
+
+#gameboard {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    grid-template-rows: repeat(3, 50px);
+    gap: 5px;
+}
+
+#gameboard div {
+    background-color: grey;
+}
