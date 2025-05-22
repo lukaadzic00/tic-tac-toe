@@ -1,6 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
+    font-family: 'Roboto';
     padding: 0;
     margin: 0;
+    font-size: large;
+}
+
+body {
+    background-color: beige;
+}
+
+#big-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 #info-container {
@@ -8,14 +25,39 @@
     gap: 10px;
 }
 
+#button-container {
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    background-color: rgb(70, 70, 208);
+    color: white;
+    border-radius: 10px;
+    width: 200px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    
+}
+
 #gameboard {
     margin-top: 20px;
     display: grid;
-    grid-template-columns: repeat(3, 50px);
-    grid-template-rows: repeat(3, 50px);
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
     gap: 5px;
 }
 
 #gameboard div {
     background-color: grey;
+    border-radius: 10px;
+    text-align: center;
+    align-content: center;
+    color: white;
+    font-size: 2.5em;
 }
